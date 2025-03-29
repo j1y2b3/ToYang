@@ -168,7 +168,8 @@ body {
 #danmu-container {
     position: relative;
     top: 15em;
-    width: 100vw;
+    left: -15em;
+    width: 200vw;
     height: 100vh;
     z-index: 5;
 }
