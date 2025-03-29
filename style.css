@@ -4,11 +4,11 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    left: 100px;
-    bottom: 150px;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    left: 100px;
+    bottom: 150px;
     overflow: hidden;
     font-family: "Microsoft YaHei", sans-serif;
     background: linear-gradient(160deg, #f0f8ff 30%, #ffe6f0 100%);
@@ -167,9 +167,9 @@ body {
 /* 弹幕容器 */
 #danmu-container {
     position: relative;
+    top: 15em;
     width: 100vw;
-    height: calc(100vh - 100px); /* 减去标题的高度，避免弹幕覆盖标题 */
-    margin-top: 100px; /* 为弹幕容器留出标题的空间 */
+    height: 100vh;
     z-index: 5;
 }
 
@@ -185,11 +185,15 @@ body {
 
 /* 标题 */
 h1 {
+    position: absolute; /* 固定标题位置 */
+    width: 100%; /* 宽度 100% */
+    top: 20px; /* 距离顶部 20px */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 修正水平居中偏移 */
     text-align: center;
     color: #ff6b6b;
-    position: relative; /* 确保标题独立于弹幕 */
-    z-index: 10; /* 提高标题层级 */
-    background-color: rgba(255, 255, 255, 0.8); /* 可选：为标题添加背景以增强可读性 */
-    padding: 10px; /* 可选：增加标题的点击区域 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 6;
     font-size: 8em;
+    margin: 0; /* 移除默认外边距 */
 }
