@@ -2,31 +2,16 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     left: 100px;
     bottom: 150px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
     overflow: hidden;
     font-family: "Microsoft YaHei", sans-serif;
     background: linear-gradient(160deg, #f0f8ff 30%, #ffe6f0 100%);
-}
-
-/* 确保页面内容居中 */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden; /* 防止滚动条 */
-    box-sizing: border-box;
-}
-
-/* 如果有主容器，确保其居中 */
-#main-container {
-    width: 100%;
-    max-width: 1200px; /* 限制最大宽度 */
-    margin: 0 auto;
-    text-align: center;
 }
 
 /* 樱花树容器 */
@@ -183,7 +168,8 @@ html, body {
 #danmu-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 100px); /* 减去标题的高度，避免弹幕覆盖标题 */
+    margin-top: 100px; /* 为弹幕容器留出标题的空间 */
     z-index: 5;
 }
 
@@ -201,9 +187,9 @@ html, body {
 h1 {
     text-align: center;
     color: #ff6b6b;
-    margin-top: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 6;
+    position: relative; /* 确保标题独立于弹幕 */
+    z-index: 10; /* 提高标题层级 */
+    background-color: rgba(255, 255, 255, 0.8); /* 可选：为标题添加背景以增强可读性 */
+    padding: 10px; /* 可选：增加标题的点击区域 */
     font-size: 8em;
 }
