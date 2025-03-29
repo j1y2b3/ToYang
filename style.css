@@ -17,7 +17,6 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: hidden; /* 防止滚动条 */
     box-sizing: border-box;
 }
