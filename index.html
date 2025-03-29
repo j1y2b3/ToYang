@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>班主任节快乐</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sakura-tree">
+        <div class="trunk">
+            <div class="bark-texture"></div>
+        </div>
+        <div class="branch left"></div>
+        <div class="branch right"></div>
+        <div class="blossoms">
+            <div class="petal-cluster"></div>
+        </div>
+    </div>
+    
+    <canvas id="sakura-canvas"></canvas>
+    <h1>班主任节快乐</h1>
+    <div id="danmu-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // 初始化弹幕
+        initDanmu().catch(console.error);
+    </script>
+</body>
+</html>
