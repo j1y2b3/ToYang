@@ -4,11 +4,30 @@ body {
     padding: 0;
     left: 100px;
     bottom: 150px;
-    /*min-width:1200px;*/
-    width:100%;
     overflow: hidden;
     font-family: "Microsoft YaHei", sans-serif;
     background: linear-gradient(160deg, #f0f8ff 30%, #ffe6f0 100%);
+}
+
+/* 确保页面内容居中 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* 防止滚动条 */
+    box-sizing: border-box;
+}
+
+/* 如果有主容器，确保其居中 */
+#main-container {
+    width: 100%;
+    max-width: 1200px; /* 限制最大宽度 */
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* 樱花树容器 */
