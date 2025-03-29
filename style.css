@@ -177,7 +177,7 @@ body {
 .danmu {
     position: absolute;
     white-space: nowrap;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     mix-blend-mode: multiply;
