@@ -205,12 +205,13 @@ h1 {
         height: 35%;
         transform: rotate(-20deg) skewY(8deg);
     }
+
     #danmu-container {
         top: 3em;
         font-size: 40px;
     }
 
     h1 {
-        left: 50%;
+        left: 70%;
     }
 }
