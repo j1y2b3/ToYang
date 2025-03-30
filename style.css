@@ -185,7 +185,7 @@ h1 {
 /* 适配移动端 */
 @media (max-width: 1200px) {
     #danmu-container {
-        top: 20em;
+        top: 10em;
     }
 
     .danmu {
