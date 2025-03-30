@@ -22,11 +22,10 @@ body {
     width: 15%;
     height: 82%;
     background: 
-        linear-gradient(15deg, 
+        linear-gradient(to right, 
             #3d2416 20%, 
-            #63412a 30%,
-            #3d2416 50%,
-            #63412a 80%),
+            #63412a 50%, 
+            #3d2416 80%),
         repeating-linear-gradient(
             -75deg,
             transparent,
@@ -35,7 +34,7 @@ body {
             #2e1a0f 6px
         );
     border-radius: 50px;
-    transform: perspective(400px) rotateX(55deg);
+    transform: perspective(400px) rotateX(35deg);
     box-shadow:
         15px 10px 25px rgba(0,0,0,0.3),
         inset -8px 0 15px #2e1a0f,
@@ -76,7 +75,7 @@ body {
             #3d2416 20%, 
             #63412a 50%,
             #3d2416 80%);
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 
         5px 5px 10px rgba(0,0,0,0.2),
         inset -3px 0 5px #2e1a0f;
@@ -154,10 +153,6 @@ body {
 /* 弹幕容器 */
 #danmu-container {
     position: relative;
-    top: 15em;
-    left: 15em;
-    width: 200vw;
-    height: 100vh;
     z-index: 5;
 }
 
@@ -174,7 +169,7 @@ body {
 /* 标题 */
 h1 {
     position: absolute;
-    width: 100%;
+    width: 120%;
     top: -1cm;
     left: 50%;
     transform: translateX(-50%);
@@ -200,6 +195,9 @@ h1 {
 /* 适配苹果10和11 */
 @media screen and (device-width: 375px) and (device-height: 812px),
     screen and (device-width: 414px) and (device-height: 896px) {
+    #danmu-container {
+        font-size: 40px;
+    }
     h1 {
         left: 50%;
     }
