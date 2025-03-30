@@ -206,8 +206,12 @@ h1 {
         transform: rotate(-20deg) skewY(8deg);
     }
 
+    .blossoms{
+        top: 10%;
+    }
+
     #danmu-container {
-        top: 5em;
+        top: 6em;
         font-size: 40px;
     }
 
