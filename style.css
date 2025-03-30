@@ -201,6 +201,10 @@ h1 {
 /* 适配苹果10和11 */
 @media screen and (device-width: 375px) and (device-height: 812px),
     screen and (device-width: 414px) and (device-height: 896px) {
+    .branch.left{
+        height: 35%;
+        transform: rotate(-20deg) skewY(8deg);
+    }
     #danmu-container {
         top: 3em;
         font-size: 40px;
