@@ -102,7 +102,7 @@ async function initDanmu() {
         const style = document.createElement('style');
         style.textContent = `
             @keyframes danmu-scroll {
-                from { transform: translateX(125vw); }
+                from { transform: translateX(150vw); }
                 to { transform: translateX(-100%); }
             }
         `;
