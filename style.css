@@ -200,12 +200,7 @@ h1 {
 /* 适配苹果10和11 */
 @media screen and (device-width: 375px) and (device-height: 812px),
     screen and (device-width: 414px) and (device-height: 896px) {
-    #danmu-container {
-        top: 20em;
-    }
-
     h1 {
-        font-size: 10em;
         left: 50%;
     }
 }
