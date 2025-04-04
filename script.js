@@ -72,7 +72,7 @@ async function initDanmu() {
 
         const danmuContainer = document.getElementById('danmu-container');
         const lineHeight = 30;
-        const numLines = Math.floor(window.innerHeight / lineHeight);
+        const numLines = Math.floor(window.innerHeight / lineHeight) + 10;
         const usedLines = new Array(numLines).fill(false);
 
         messages.forEach((message) => {
@@ -109,9 +109,5 @@ async function initDanmu() {
         document.head.appendChild(style);
     } catch (error) {
         console.error('初始化弹幕失败:', error);
-        const errorMsg = document.createElement('div');
-        errorMsg.textContent = '祝福语加载失败，但我们的祝福永存心间！❤️';
-        errorMsg.style.cssText = 'position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); font-size:24px; color:red;';
-        document.body.appendChild(errorMsg);
     }
 }
