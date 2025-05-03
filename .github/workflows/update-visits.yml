@@ -19,7 +19,7 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i "s/![Visits Badge](https://img.shields.io/badge/Visits-.*-blue)/![Visits Badge](https://img.shields.io/badge/Visits-${count}-blue)/" README.md
+          sed -i "s#\!\[Visits Badge\](https://img\.shields\.io/badge/Visits-[0-9]\+-blue)#![Visits Badge](https://img.shields.io/badge/Visits-${count}-blue)#" README.md
 
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
